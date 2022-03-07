@@ -1,2 +1,2 @@
 # Python-Projects
-My Tech Academy Projects
+My Tech Academy Python Projects
