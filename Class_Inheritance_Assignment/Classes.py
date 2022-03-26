@@ -7,7 +7,7 @@ class Computer:
         self.RAM = RAM
     #Printing the computer parts of the parent class when it's called
     def showCom(parts):
-        print(parts.CPU,"\n",parts.GPU,"\n",parts.RAM,"\n",parts.)
+        print(parts.CPU,"\n",parts.GPU,"\n",parts.RAM,"\n")
 
 #Adding first child class by inheriting the Computer class
 class Mac(Computer):
