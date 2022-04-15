@@ -40,7 +40,7 @@ class ParentWindow(Frame):
         self.txtBrowse2 = Entry(self.master, fg="black", width=40)
         self.txtBrowse2.grid(row=2, column=2, padx=(25,0), pady=(15,0))
 
-        self.btnSubmit = Button(self.master,text='Move Old Files', fg='black', width=15, command=self.subFile)
+        self.btnSubmit = Button(self.master,text='Move New Files', fg='black', width=15, command=self.subFile)
         self.btnSubmit.grid(row=3, column=0, padx=(25,0), pady=(25,0), sticky=N+S+W)
 
     #Function for selecting the source folder
@@ -77,7 +77,7 @@ class ParentWindow(Frame):
                     #within the past 24 hours
                     x = os.path.getmtime(source + '{}'.format(i))
                     y = abs(x - unixHour)
-                    if y >= 86400:
+                    if y <= 86400:
                         shutil.move(source+i, dest)
                 messagebox.showinfo("Success!","File transfer complete!")
             #Skips running the file move if the directory does not exist
