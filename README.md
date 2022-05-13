@@ -1,6 +1,7 @@
 # Python-Projects
 My Tech Academy Python Projects
 
+
 ## Nice or Mean
 This project is a simple multiple choice game where you either choose to be nice or mean to strangers.
 
